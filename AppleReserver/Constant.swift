@@ -9,6 +9,6 @@
 import Foundation
 
 public struct AppleURL {
-    static let stores = URL(string: "https://reserve-prime.apple.com/CN/zh_CN/reserve/iPhoneX/stores.json")!
-    static let availability = URL(string: "https://reserve-prime.apple.com/CN/zh_CN/reserve/iPhoneX/availability.json")!
+    static let stores = URL(string: "https://reserve-prime.apple.com/HK/zh_HK/reserve/iPhoneX/stores.json")!
+    static let availability = URL(string: "https://reserve-prime.apple.com/HK/zh_HK/reserve/iPhoneX/availability.json")!
 }

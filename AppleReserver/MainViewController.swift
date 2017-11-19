@@ -30,7 +30,7 @@ class MainViewController: NSViewController {
                     return
                 }
                 let notification = NSUserNotification()
-                notification.informativeText = "\(availability.partNumber) 有货啦！！！"
+                notification.informativeText = "\(availability.partNumber) 有貨啦！！！"
                 notification.soundName = NSUserNotificationDefaultSoundName
                 NSUserNotificationCenter.default.deliver(notification)
             }
@@ -101,7 +101,7 @@ class MainViewController: NSViewController {
     @IBAction func fireAction(_ sender: NSButton) {
         let interval = Double(self.timerIntervalButton.titleOfSelectedItem ?? "3") ?? 3.0
         if self.pollingTimer?.isValid == true {
-            sender.title = "开始"
+            sender.title = "開始"
             self.storeTableView.isEnabled = true
             self.timerIntervalButton.isEnabled = true
             self.indicator.stopAnimation(sender)
@@ -160,7 +160,7 @@ extension MainViewController: NSTableViewDataSource, NSTableViewDelegate {
             case "Capacity":
                 return product.capacity
             case "Status":
-                return (availability.contract || availability.unlocked) ? "有货" : "无货"
+                return (availability.contract || availability.unlocked) ? "有貨" : "無貨"
             default:
                 return nil
             }
